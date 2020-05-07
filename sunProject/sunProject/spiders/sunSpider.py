@@ -9,7 +9,7 @@ class SunspiderSpider(scrapy.Spider):
     start_urls = ['http://wz.sun0769.com/political/index/politicsNewest']
 
     def parse(self, response):
-        self.settings.get("","")#获取配置文件settings中的配置
+       # self.settings.get("","")#获取配置文件settings中的配置
         li_list = response.xpath("//ul[@class = 'title-state-ul']/li")
         for li in li_list:
             item = SunprojectItem()

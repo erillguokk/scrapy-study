@@ -25,7 +25,7 @@ requests.get("http://www.baidu.com",proxes=proxes,headers=headers)
 '''
 
 ###处理session,模拟登陆
-requests.session()#保持客户端与服务端之间的会话
+#   requests.session()#保持客户端与服务端之间的会话
 #使用session发送请求，保存cookie到session中
 #使用能够自动的携带登陆成功的时候保存在其中的cookie,进行请求
 
